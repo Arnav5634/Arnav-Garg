@@ -1,0 +1,695 @@
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #7CD1C0 ;
+
+
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        nav{
+            flex: 1;
+            text-align: right;
+
+        }
+        nav ul{
+           display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        a{
+
+            text-decoration: none;
+                color: #555;
+        }
+        p{
+            color: #555;
+
+        }
+        .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 50px;
+
+
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .btn{
+            display: inline-block;
+            background: #ff523b;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 300px;
+            transition: background 0.5s;
+
+        }
+        .header .row{
+            margin-top: 70px;
+        }
+ .col-2{
+           width: 50%;
+
+        }
+ .col-2 img{
+            max-width: 100%;
+            padding: 50px 0;
+margin: 25px 0px;
+        }
+.col-2 h1{
+         font-size: 50px;
+         line-height: 60px;
+margin: 25px 0px;
+
+
+
+}
+        .btn:hover{
+            background: #563434;
+        }
+        .header{
+
+        }
+        body{
+            font-family: sans-serif;}
+
+        .col-3{width: 30%;
+
+          margin-bottom: 65px;
+
+
+        }
+        .col-3 img{
+            width: 100%;
+
+        }
+
+        }
+        .small-container{
+
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+
+
+
+    }
+    .col-4{
+        flex-basis: 25%;
+        padding: 10px;
+        min-width: 200px;
+      margin-bottom: 50px;
+        transition: transform 1s;
+
+
+
+    }
+    .col-4 img{
+        width: 100%;
+
+    }
+
+    .arnav{
+      color: #555;
+      text-align: center;
+      margin: 0 auto 80px;
+      line-height: 60px;
+      position: relative;
+
+    }
+    .arnav::after{
+      content: "";
+      background: #ff523b;
+      width: 80px;
+      height: 6px;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 50px;
+    }
+        .title{
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+    .title::after{
+        content: "";
+        background: #ff523b;
+        width: 80px;
+        height: 5px;
+border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+
+
+    }
+    done
+        .footer{
+            background: #000;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 60px 0 20px;
+        }
+        .footer p{
+            color: #8a8a8a;
+
+        }
+        .footer h3{color: #fff;
+            margin-bottom: 20px;
+
+        }
+        .footer-col-1, .footer-col-2, .footer-col-3, footer-col-4{
+            min-width: 250px;
+            margin-bottom: 20px;
+}
+        .footer-col-1{
+       flex-basis: 30%;}
+        .footer-col-2{
+            flex: 1;
+            text-align: center;
+        }
+        .footer-col-2 img{
+            width: 180px;
+            margin-bottom: 20px;
+
+        }
+        .footer-col-3, .footer-col-4{
+            flex-basis: 12%;
+            text-align: center;
+        }
+        ul{
+list-style-type: none;}
+        small{
+            color: #555;
+        }
+    h4{
+        color: #555;
+        font-weight: normal;
+    }
+    .col-4 p{ font-size: 14px;
+
+    }
+    .rating .fa{
+        color: #ff523b;
+
+    }
+    .col-4:hover{transform: translate(-5px);
+
+    }
+        .offer{
+
+
+
+
+
+        }
+        .menu-icon{
+            width: 28px;
+            margin-left: 20px;
+        }
+
+
+
+
+        @media only screen and (max-width: 800px){
+            nav ul{
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: #333;
+                width: 100%;
+                overflow: hidden;
+                transition: max-height 0.5s;
+            }
+            nav ul li{
+
+                display: block;
+                margin-right: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+            }
+            nav ul li a{
+                color: #fff;
+            }
+            .menu-icon{
+                display: block;
+                cursor: pointer;
+            }
+
+        }
+       @media only screen and (max-width: 600px){
+           .row{
+               text-align: center;
+
+           }
+           .col-2, .col-3, col-4{
+               flex-basis: 100%;
+           }
+        }
+
+        .col-2 .offer-img{
+            padding: 50px;
+            width: 100%;
+        }
+
+        p{text-align: inherit;
+        font-style: italic;
+
+        }
+end
+
+
+
+
+        .footer hr{
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+
+        }
+        .copyright{
+            text-align: center;
+        }
+        .testimonial{
+
+            padding-top: 100px;
+        }
+        .testimonial .col-3{
+            text-align: center;
+            padding: 40px 20px;
+         box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: transform 0.5s;}
+        .brands{
+            margin:  100px auto;
+        }
+        .col-5{
+            width:
+            160px;}
+        .col-5 img{
+            width: 100%;
+            cursor: pointer;
+            filter: grayscale(100%);
+        }
+        .col-5 img:hover{
+            filter: grayscale(0);
+
+        }
+
+
+        .testimonial .col-3 img{
+            width: 50px;
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+        .testimonial .col-3:hover{
+            transform: translateY(-10px);
+        }
+        .heading{
+        padding-left: 500px;
+        }
+        .col-3 p{
+            font-size: 19px;
+            margin-bottom: 12px 0;
+            color: #777;
+
+        }
+        .testimonial .col3 h3{
+            font-weight: 600;
+            color: #555;
+            font-size: 16px;
+
+        }
+        .app-logo{
+
+            margin-top: 20px;
+
+        }
+        .app-logo img{
+            width: 140px;
+        }
+        .row-2{
+            justify-content: space-between;
+             margin: 100px auto 50px;
+        }
+        select{
+            border: 1px solid #ff523b;
+            padding: 5px;
+
+        }
+        select:focus{
+            outline: none;
+
+
+        }
+        .arnav{
+
+        }
+        .page-btn{
+            margin: 0 auto 80px;
+        }
+        .page-btn span{
+            display: inline-block;
+            border: 1px solid #ff523b;
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+
+}
+        .page-btn span:hover{
+            color: white;
+            background-color: orangered;
+        }
+
+</style>
+    <meta charset="UTF-8">
+    <title>ArnavStore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="heading">
+
+
+      </div>
+
+
+    <div class="header">
+    <div class="container">
+
+
+    <div class="navbar">
+    <div class="logo">
+        <img src="logo.png" width="125px">
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li> <li><a href="">Products</a></li> <li><a href="">About</a></li> <li><a href="">Contact</a></li> <li><a href="">Account</a></li>
+
+            </ul>
+        </nav>
+<img src="cart.png" width="30px" height="30px"> <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Give Your workout<br> a new style!</h1>
+            <p>Success isn't always about greatness. It's about consistency. Consistent<br> hard work gains success. Greatness will come with consistent hardwork</p>
+            <a href="" class="btn">Explore more &#8594;</a>
+        </div>
+
+
+        <div class="col-2">
+        </div>
+        </div>
+        </div>
+    </div>
+
+        <div class="categories">
+            <div class="small-container">
+            <div class="row row-2">
+                  <h2 class="arnav">All Products</h2>
+                    <select>
+                        <option>Default Shorting</option>
+                        <option>Sort by Price</option>
+                          <option>Sort by Rating</option>
+                          <option>Sort by Sale</option>
+                    </select>
+                </div>
+                      <!-- My Products -->
+                <div class='row'>
+                <div class="col-3">
+                <img src="category-1.jpg">
+
+                </div>
+                <div class="col-3">
+                 <img src="category-2.jpg"></div>
+                <div class="col-3">
+                 <img src="category-3.jpg"></div>
+                <!Featured product!>
+             <div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+
+         <div class="col-4">
+        <img src="product-1.jpg">
+             <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+             </div>
+                    <p>$50.00</p>
+             </div>
+              <div class="col-4">
+              <img src="product-2.jpg">
+             <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+                  </div>
+                    <p>$50.00</p>
+             </div>
+
+        <div class="col-4">
+        <img src="product-3.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+
+                        </div>
+                    <p>$50.00</p>
+        </div>
+
+                  <div class="col-4">
+        <img src="product-4.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+                      </div>
+                      <p>$50.00</p>
+                 </div>
+          <div class="col-4">
+        <img src="product-5.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+                      </div>
+                      <p>$50.00</p>
+                 </div>
+          <div class="col-4">
+        <img src="product-6.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+                      </div>
+                      <p>$50.00</p>
+                 </div>
+          <div class="col-4">
+        <img src="product-7.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+                      </div>
+                      <p>$50.00</p>
+                 </div>
+          <div class="col-4">
+        <img src="product-8.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+                      </div>
+                      <p>$50.00</p>
+                 </div>
+          <div class="col-4">
+        <img src="product-9.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+                      </div>
+                      <p>$50.00</p>
+                 </div>
+          <div class="col-4">
+        <img src="product-10.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+             <i class="fa fa-star"></i>
+                      </div>
+                      <p>$50.00</p>
+                 </div>
+          <div class="col-4">
+        <img src="product-11.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+                      </div>
+                      <p>$50.00</p>
+                 </div>
+          <div class="col-4">
+        <img src="product-12.jpg">
+        <h4>Red Printed T-Shirt</h4>
+         <div class="rating">
+                      </div>
+                      <p>$50.00</p>
+                 </div>
+                </div>
+                 <div class="page-btn">
+                     <span>1</span>
+                     <span>2</span>
+                     <span>3</span>
+                     <span>4</span>
+                     <spam>&#8594;</spam>
+                 </div>
+                </div>
+
+                     <!--My Offers-->
+
+            <div class="offer">
+                <div class="small-container">
+                    <div class="row">
+                   <div class="col-2">
+        <img src="exclusive.png" class="offer-img">
+                             </div>
+
+                        <div class="col-2">
+                            <p>Exclusively Available on Red store</p>
+                            <h1>Smart Band 4</h1>
+               <small>The Mi band-4 features a 30% larger(than Mi Band 3) Amoled color full-touch dsiplay with adjustable brightness, so everything is clear as can be.</small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+
+                        </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+                </div>
+        </div>
+
+        <!--Testimonial-->
+
+        <div class="testimonial">
+        <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+           <i class="fa fa-quote-left"></i>
+
+           <p>"Whether it is draping a saree into a dhoti style, wearing the right lingerie under certain dresses or discovering multiple uses out of heavy ethnic wear, Myntra Studio will help you acquire some unique and useful fashion hacks. Each hack is designed with the intention to help you get the best wear out of everything in your wardrobe."</p>
+             <img src="user-1.png">
+            <h3>Sean Parker</h3>
+
+            </div>
+                <div class="col-3">
+           <i class="fa fa-quote-left"></i>
+
+                    <p>"Whether it is draping a saree into a dhoti style, wearing the right lingerie under certain dresses or discovering multiple uses out of heavy ethnic wear, Myntra Studio will help you acquire some unique and useful fashion hacks. Each hack is designed with the intention to help you get the best wear out of everything in your wardrobe.<bold>"</bold></p>
+             <img src="user-3.png">
+            <h3>Sean Parker</h3>
+
+            </div>
+            <div class="col-3">
+           <i class="fa fa-quote-left"></i>
+
+           <p>"Whether it is draping a saree into a dhoti style, wearing the right lingerie under certain dresses or discovering multiple uses out of heavy ethnic wear, Myntra Studio will help you acquire some unique and useful fashion hacks. Each hack is designed with the intention to help you get the best wear out of everything in your wardrobe."</p>
+             <img src="user-2.png">
+            <h3>Sean Parker</h3>
+
+            </div>
+        </div>
+        </div>
+
+
+
+        </div>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                <div class="col-5">
+                    <img src="coca-cola.jpg">
+
+                    </div>
+                    <div class="col-5">
+                    <img src="godrej.jpg">
+
+                    </div>
+                    <div class="col-5">
+                    <img src="oppo.jpg">
+
+                    </div>
+                    <div class="col-5">
+                    <img src="paypal.jpg">
+
+                    </div>
+
+                    <div class="col-5">
+                    <img src="coca-cola.jpg">
+
+                    </div>
+                    <div class="col-5">
+                    <img src="logo-philips.png">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="app-store.png">
+                    <img src="play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+
+                    <p>Our purpose is to sutainably Make the Pleasure and benefits of Sports Accessile to the Many</p>
+
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+
+                        <li>Coupons</li>
+                        <li>Blog pose</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li></ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li></ul>
+                </div>
+            </div>
+                <hr>
+                <div class="copyright">Copyright 2020 - Easy Tutorials</p>
+            </div>
+        </div>
+
+    </body>
+</html>
